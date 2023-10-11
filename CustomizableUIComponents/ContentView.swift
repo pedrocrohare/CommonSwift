@@ -9,12 +9,12 @@ import SwiftUI
 import Lottie
 
 
-public struct LottieView: UIViewRepresentable {
+struct LottieView: UIViewRepresentable {
     
     var name: String
     var loopMode: LottieLoopMode = .loop
     
-    public func makeUIView(context: UIViewRepresentableContext<LottieView>) -> UIView {
+    func makeUIView(context: UIViewRepresentableContext<LottieView>) -> UIView {
         
         let view = UIView(frame: .zero)
         
@@ -33,11 +33,15 @@ public struct LottieView: UIViewRepresentable {
         return view
     }
     
-    public func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<LottieView>) {
+    func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<LottieView>) {
     }
 }
 
 public struct CustomContentView: View {
+    
+    public init() {
+        
+    }
     public var body: some View {
         HStack {
             Spacer()
