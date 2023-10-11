@@ -50,7 +50,8 @@ Pod::Spec.new do |spec|
   #  Specify a social_media_url where others can refer to, for example a twitter
   #  profile URL.
   #
-
+  spec.swift_versions = '5.0'
+  spec.dependency 'lottie-ios'
   spec.author             = { "pedrocrohare" => "pedro.crohare@icloud.com" }
   # Or just: spec.author    = "pedrocrohare"
   # spec.authors            = { "pedrocrohare" => "pedro.crohare@icloud.com" }
@@ -77,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "git@github.com:pedrocrohare/CustomizableUIComponents.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/pedrocrohare/CustomizableUIComponents.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -88,7 +89,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  spec.source_files  = "CustomizableUIComponents", "CustomizableUIComponents/**/*.{h,m}"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
